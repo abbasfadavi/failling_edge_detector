@@ -1,0 +1,98 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x71ADAF4499FC13E2",
+      "design_src": "SYSGEN",
+      "device": "xc7k160tfbg484-2",
+      "gen_directory": "../../../../falling_detector.gen/sources_1/bd/falling_detector_bd",
+      "name": "falling_detector_bd",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "falling_detector_1": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "falling_detector_bd_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "in_x0": {
+        "type": "data",
+        "direction": "I",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "out_x0": {
+        "type": "data",
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      }
+    },
+    "components": {
+      "falling_detector_1": {
+        "vlnv": "User_Company:SysGen:falling_detector:1.0",
+        "xci_name": "falling_detector_bd_falling_detector_1_0",
+        "xci_path": "ip\\falling_detector_bd_falling_detector_1_0\\falling_detector_bd_falling_detector_1_0.xci",
+        "inst_hier_path": "falling_detector_1"
+      }
+    },
+    "nets": {
+      "clk_1": {
+        "ports": [
+          "clk",
+          "falling_detector_1/clk"
+        ]
+      },
+      "falling_detector_1_out_x0": {
+        "ports": [
+          "falling_detector_1/out_x0",
+          "out_x0"
+        ]
+      },
+      "in_x0_1": {
+        "ports": [
+          "in_x0",
+          "falling_detector_1/in_x0"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  'Line_106' => {
+    'CodeInstance' => 'falling_detector_default_clock_driver/clockdriver',
+    'Instance' => 'clockdriver',
+    'SimulinkInstance' => ''
+  },
+  'Line_137' => {
+    'CodeInstance' => 'falling_detector_default_clock_driver',
+    'Instance' => 'falling_detector_default_clock_driver',
+    'SimulinkInstance' => ''
+  },
+  'Line_145' => {
+    'CodeInstance' => 'falling_detector_struct',
+    'Instance' => 'falling_detector_struct',
+    'SimulinkInstance' => 'falling_detector'
+  },
+  'Line_26' => {
+    'CodeInstance' => 'falling_detector_struct/h2l/delay',
+    'Instance' => 'delay',
+    'SimulinkInstance' => 'falling_detector/H2L/Delay'
+  },
+  'Line_41' => {
+    'CodeInstance' => 'falling_detector_struct/h2l/inverter1',
+    'Instance' => 'inverter1',
+    'SimulinkInstance' => 'falling_detector/H2L/Inverter1'
+  },
+  'Line_49' => {
+    'CodeInstance' => 'falling_detector_struct/h2l/logical1',
+    'Instance' => 'logical1',
+    'SimulinkInstance' => 'falling_detector/H2L/Logical1'
+  },
+  'Line_82' => {
+    'CodeInstance' => 'falling_detector_struct/h2l',
+    'Instance' => 'h2l',
+    'SimulinkInstance' => 'falling_detector/H2L'
+  }
+}
